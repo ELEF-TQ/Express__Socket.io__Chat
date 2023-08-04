@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+</head>
+<body>
+
+    <% data.forEach(function(m1) { %>
+        <div>
+          <p>ID: <%= m1.id %></p>
+          <p>Name: <%= m1.name %></p>
+          <img src="<%= m1.image %>" alt="User Image">
+          <p>Email: <%= m1.email %></p>
+        </div>
+      <% }); %>
+
+      <form method="GET" >
+        <input type="text" name="id"/>
+        <input type="submit">
+      </form>
+      
+</body>
+</html>
